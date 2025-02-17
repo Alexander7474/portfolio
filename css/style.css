@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Liter", sans-serif;
+}
+
+.main-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./../img/background.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
+.main-title {
+  position: fixed; /* Fixé en haut */
+  top: 0;
+  left: 50%; /* Centre la div horizontalement */
+  transform: translateX(-50%); /* Ajuste pour bien centrer */
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.nav-bar {
+  background: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
+  border-radius: 10px; /* Arrondi des bords */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 100px;
+}
+
+/* Barre horizontale */
+.top-bar {
+    width: 100%; /* Barre sur toute la largeur */
+    height: 30px;
+    background: rgb(0, 0, 0); /* Fond noir transparent */
+    display: flex; /* Organisation horizontale */
+    justify-content: flex-end; /* Centre les icônes horizontalement */
+    align-items: center; /* Centre verticalement */
+    position: fixed; /* Fixé en haut de la page */
+    top: 0;
+    left: 0;
+}
+
+/* Style des icônes */
+.icon {
+    width: 80%; /* Taille du carré */
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3%; /* Espacement entre les icônes */
+    transition: 0.3s; /* Animation fluide */
+}
+
+/* Images des icônes */
+.icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Effet au survol */
+.icon:hover {
+    transform: scale(1.1);
+}
+
+/* Style des icônes */
+.top-icon {
+    width: 30px; /* Taille du carré */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s; /* Animation fluide */
+}
+
+/* Images des icônes */
+.top-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Coins arrondis */
+}
