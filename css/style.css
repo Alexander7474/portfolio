@@ -96,6 +96,16 @@ body {
     border-radius: 10px; /* Coins arrondis */
 }
 
+.windows {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-auto-rows: minmax(50px, 1fr);
+}
+
 .window {
   background: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
   border-radius: 10px; /* Arrondi des bords */

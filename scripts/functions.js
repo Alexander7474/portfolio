@@ -1,17 +1,14 @@
+
+// Met a jour le temps dans tous les éléments avec l'id time
 function updateTime() {
-  // Récupérer l'heure actuelle
+  // heure actuelle
   const now = new Date();
 
-  // Format de l'heure (hh:mm:ss)
+  // Format
   const hours = now.getHours().toString().padStart(2, '0');
   const minutes = now.getMinutes().toString().padStart(2, '0');
 
-  // Mettre l'heure à jour dans la div
+  // Mettre l'heure a jour
   document.getElementById('time').textContent = `${hours}:${minutes}`;
 }
 
-// Mettre à jour l'heure toutes les secondes
-setInterval(updateTime, 1000);
-
-// Initialiser l'heure dès le début
-updateTime();

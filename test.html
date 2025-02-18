@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille Dynamique</title>
+    <style>
+        /* Carré bleu (conteneur) */
+        #conteneur {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            display: grid;
+            gap: 5px;
+            padding: 5px;
+            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+            grid-auto-rows: minmax(50px, 1fr);
+        }
+
+        /* Carrés rouges */
+        .carre-rouge {
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Bouton */
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="conteneur"></div>
+    <button id="ajouter">Ajouter un carré rouge</button>
+
+    <script>
+        let count = 1; // Compteur pour identifier les carrés rouges
+
+        document.getElementById("ajouter").addEventListener("click", () => {
+            const carreRouge = document.createElement("div");
+            carreRouge.classList.add("carre-rouge");
+            carreRouge.textContent = count++; // Numérotation des carrés rouges
+
+            // Ajouter le carré rouge au conteneur
+            document.getElementById("conteneur").appendChild(carreRouge);
+        });
+    </script>
+
+</body>
+</html>

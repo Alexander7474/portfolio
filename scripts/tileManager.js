@@ -1,0 +1,7 @@
+class TileManager {
+
+}
+
+class Tile {
+
+}
