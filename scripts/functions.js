@@ -48,3 +48,7 @@ function createWindow() {
   return win;
 }
 
+function setBackground(bgPath) {
+  const bgDiv = document.getElementById("main-bg");
+  bgDiv.style.backgroundImage = "url('" + bgPath + "')";
+}
