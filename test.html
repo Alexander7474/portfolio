@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grille Dynamique</title>
     <style>
+        /* Supprime le scroll horizontal */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         /* Carré bleu (conteneur) */
         #conteneur {
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            height: 100vh;
             background-color: blue;
             display: grid;
-            gap: 5px;
-            padding: 5px;
-            grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-            grid-auto-rows: minmax(50px, 1fr);
+            gap: 10px;
+            padding: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+            grid-auto-rows: minmax(40px, 1fr);
+            place-items: center;
         }
 
         /* Carrés rouges */
@@ -25,11 +34,15 @@
             justify-content: center;
             color: white;
             font-weight: bold;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
         }
 
         /* Bouton */
         button {
-            margin-top: 10px;
+            margin-top: 20px;
             padding: 10px;
             font-size: 16px;
             cursor: pointer;
