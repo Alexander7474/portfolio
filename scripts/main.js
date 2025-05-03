@@ -7,6 +7,10 @@ updateTime();
 // getion des tiles
 let winCount = 1; // Compteur de tile
 
+createWindowMe();
+createWindowGit();
+createWindowHTB();
+
 //chargement de la liste de fond d'ecran
 let backgrounds = [
   "img/background0.jpg",
@@ -20,26 +24,13 @@ document.querySelectorAll(".nav-icon").forEach(div => {
   div.addEventListener("click", function() {
     const name = div.querySelector("img").getAttribute("alt");
 
-    const win = createWindow();
-    const bodyWin = win.querySelector(".body-window");
-
     if(name == "Me"){ // Page personnel
-
-      bodyWin.innerHTML = "<h1>\uf4ff Alexandre LANTERNIER</h1>";
-      bodyWin.innerHTML += "<p>Welcome to my portfolio</p>";
-
+      createWindowMe();
     }else if(name == "Git"){ //Page github
-
-      bodyWin.innerHTML = "<a target='_blank' href='https://github.com/Alexander7474'><p>Mon profil github \uf245</p></a>";
-
+      createWindowGit();
     }else if(name == "HTB"){ //Page Hack the box
-
-      bodyWin.innerHTML = "<p style='color:green;'>My Hack the Box profile \uf024</p>";
-      bodyWin.innerHTML += "<a target='_blank' href='https://app.hackthebox.com/profile/384315'><img src='https://www.hackthebox.com/badge/image/384315' width='400' height='100'></a>";
-
+      createWindowHTB();
     }
-
-    document.getElementById("windows-conteneur").appendChild(win);
   });
 });
 
