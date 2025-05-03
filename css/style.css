@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "HackNerdFont";
+  font-family: "HackNerdFont", sans-serif;
   color: white;
 }
 
@@ -23,92 +23,90 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: black;
-  background-image: url('./../img/background0.jpg');
-  background-size: cover;
+  background: black url('./../img/background0.jpg') no-repeat center center/cover;
   z-index: -1;
 }
 
 .main-title {
-  position: fixed; /* Fixé en haut */
+  position: fixed;
   top: 0;
-  left: 50%; /* Centre la div horizontalement */
-  transform: translateX(-50%); /* Ajuste pour bien centrer */
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   text-align: center;
-  font-size: 3vw;
+  font-size: 4vw;
+  margin-top: 1vh;
 }
 
 .nav-bar {
-  background: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
-  border-radius: 10px; /* Arrondi des bords */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: fixed;
   left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 100px;
+  bottom: 2vh;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 80px;
   z-index: 10;
 }
 
-/* Barre horizontale */
 .top-bar {
-    width: 100%; /* Barre sur toute la largeur */
-    height: 30px;
-    background: rgb(0, 0, 0); /* Fond noir transparent */
-    display: flex; /* Organisation horizontale */
-    justify-content: flex-end; /* Centre les icônes horizontalement */
-    align-items: center; /* Centre verticalement */
-    position: fixed; /* Fixé en haut de la page */
-    top: 0;
-    left: 0;
-    z-index: 10;
+  width: 100%;
+  height: 20px; /* Réduit (avant 30px) */
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding: 0 5px; /* Petit espace autour */
 }
 
-/* Style des icônes */
+/* Style des icônes dans la top-bar */
+.top-icon {
+  width: 18px; /* Réduit (avant 28px) */
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px; /* Espace entre les icônes */
+}
+
+/* Images à l'intérieur des icônes */
+.top-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px; /* Coins toujours arrondis */
+}
+
 .nav-icon {
-    width: 80%; /* Taille du carré */
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3%; /* Espacement entre les icônes */
+  width: 25%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
 }
 
-/* Images des icônes */
 .nav-icon img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px; /* Coins arrondis */
-}
-
-/* Effet au survol */
-.icon-anim:hover {
-    transform: scale(1.1);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .icon-anim {
-  transition: 0.2s;
+  transition: transform 0.2s;
 }
 
-/* Style des icônes */
-.top-icon {
-    width: 28px; /* Taille du carré */
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Images des icônes */
-.top-icon img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px; /* Coins arrondis */
+.icon-anim:hover {
+  transform: scale(1.1);
 }
 
 .windows {
@@ -117,111 +115,107 @@ a {
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;  /* Optionnel pour l'alignement horizontal */
-  flex-wrap: nowrap;        /* S'assurer qu'on ne passe pas sur plusieurs colonnes */
+  align-items: center;
 }
 
 .window {
-  background: rgba(0, 0, 0, 0.7); /* Fond noir transparent */
-  border-radius: 10px; /* Arrondi des bords */
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
   display: flex;
-  justify-content: flex-left;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  top: 2vh;
+  top: 3vh;
   margin: 1%;
-  width: 97%;
-  height: 90vh;
-  border-left: 0.3vw solid black;   /* Bordure gauche rouge */
-  border-right: 0.3vw solid black; /* Bordure droite bleue en pointillés */
-  border-top: 2vh solid black;  /* Bordure du haut verte en double ligne */
-  border-bottom: 0.3vw solid black; /* Bordure du bas orange en pointillés */
+  width: 95%;
+  max-width: 1200px;
+  height: 85vh;
+  border: 0.5vw solid black;
+  padding-top: 5vh;
 }
 
 .top-window {
-  top: -1.8vh;
+  position: absolute;
+  top: 0;
   width: 100%;
-  display: flex; /* Organisation horizontale */
-  justify-content: flex-end; /* Centre les icônes horizontalement */
-  position: absolute; /* Fixé en haut de la page */
-  z-index: 9;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
 }
 
 .body-window {
-    display: flex;
-  flex-direction: column; /* empile les div enfants verticalement */
-  align-items: center; /* centre horizontalement les enfants */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
   overflow-y: auto;
-  padding: 1%;
+  padding: 2%;
   text-align: center;
+  width: 90%;
 }
 
-/* class mère des boutons */
 .circular-button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  position: relative; /* Pour positionner les barres de la croix */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 5px;
+  margin: 0 5px;
+  position: relative;
 }
 
-/* Bouton de fermeture */
 .close-button {
   background: red;
 }
 .close-button::before,
 .close-button::after {
-    content: "";
-    position: absolute;
-    background: black;
-    width: 15px;
-    height: 2px;
+  content: "";
+  position: absolute;
+  background: black;
+  width: 12px;
+  height: 2px;
 }
 .close-button::before {
-    transform: rotate(135deg); /* Barre verticale */
+  transform: rotate(135deg);
 }
 .close-button::after {
-    transform: rotate(45deg); /* Barre horizontale */
+  transform: rotate(45deg);
 }
 
-/* Bouton de réduire */
 .hide-button {
   background: green;
 }
-.hide-button::before{
-    content: "";
-    position: absolute;
-    background: black;
-    width: 15px;
-    height: 2px;
+.hide-button::before {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 12px;
+  height: 2px;
 }
 
-/* boutton agrandir*/
 .resize-button {
   background: yellow;
 }
 .resize-button::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centre le carré */
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .resize-button::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-color: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centre le carré */
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* fonts */
