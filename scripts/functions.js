@@ -147,10 +147,10 @@ function createWindowHTB() {
       <br>
       <p> TryHackMe </p>
 
-      <div style="overflow: hidden; width: 490px; height: 500px;">
+      <div style="overflow: hidden; width: 390px; height: 500px;">
         <iframe 
           src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=592596" 
-          style="border:none; transform: scale(1.5); transform-origin: top left; width: 100%; height: 100%;">
+          style="border:none; transform: scale(1.2); transform-origin: top left; width: 100%; height: 100%;">
         </iframe>
       </div>
     </div>
