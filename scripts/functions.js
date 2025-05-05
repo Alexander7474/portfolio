@@ -89,17 +89,32 @@ function createWindowGit() {
     <div class="center-align"> 
       <p class="medium-font">Mes projets</p>
     </div>
-    <p style="margin-bottom: 1rem;">
-      J'ai développé une <strong>librairie 2D</strong> en <strong>C++</strong> avec <strong>OpenGL</strong>, disponible sur mon <a href="https://github.com/Alexander7474/Bbop-2D" style="color: #38bdf8; text-decoration: underline;">GitHub</a>.
+    <p class="medium-font">
+      <b>Bbop-2D:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Deux fois participant au concours <strong>24h pour coder</strong> organiser par le BDE du CERI, j'ai terminé à chaque fois sur le podium.
+      Une <strong>librairie 2D</strong> en <strong>C++</strong> avec <strong>OpenGL</strong>. <a href="https://github.com/Alexander7474/Bbop-2D" style="color: #38bdf8; text-decoration: underline;">Bbop-2D</a>.
+    </p>
+    <p class="medium-font">
+      <b>24h pour coder:</b>
+    </p>
+    <p style="margin-bottom: 1rem;">
+      Deux fois participant au concours <strong>24h pour coder</strong> organiser par le BDE du CERI. J'ai terminé avec mon équipe à chaque fois sur le podium en utilisant la librairie Bbop-2D
+    </p>
+    <p class="medium-font">
+      <b>System Inforation:</b>
+    </p>
+    <p style="margin-bottom: 1rem;">
+      Un outils de survéillance de server linux développé en bash et en python. <a href="https://github.com/Alexander7474/System_Information" style="color: #38bdf8; text-decoration: underline;">System Information</a>.
+    </p>
+    <p class="medium-font">
+      <b>GitHub:</b>
     </p>
     <div class="center-align"> 
       <div class="github-profile">
         <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Photo de Profil GitHub">
         <h1>Alexandre Lanternier</h1>
-        <p>Suivez mon travail sur GitHub !</p>
+        <p>Suivez tous mes projets sur GitHub !</p>
         <a href="https://github.com/Alexander7474" target="_blank">Voir mon GitHub</a>
       </div>
     </div>
@@ -125,6 +140,7 @@ function createWindowHTB() {
       <br>
       <p>Hack The Box</p>
 
+      <a class="htb-link" href="https://app.hackthebox.com/profile/384315">
       <div class="htb-badge">
         <img class="htb-avatar" src="https://www.hackthebox.com/storage/avatars/2c140cfcb1f046e098dc26af6a79719a.png" alt="Avatar">
         <div class="htb-info">
@@ -143,6 +159,7 @@ function createWindowHTB() {
           </div>
         </div>
       </div>
+      </a>
 
       <br>
       <p> TryHackMe </p>

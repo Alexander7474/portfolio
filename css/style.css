@@ -234,11 +234,11 @@ a {
 }
 
 .medium-font {
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .big-font {
-    font-size: 42px;
+    font-size: 35px;
 }
 
 /* github*/
@@ -284,7 +284,7 @@ a {
 
 /* HTB*/
     :root {
-    --badge-scale: 1.8; /* <<<< Tu changes ici pour agrandir ou réduire */
+    --badge-scale: 1.75; /* <<<< Tu changes ici pour agrandir ou réduire */
   }
 
   .htb-badge {
