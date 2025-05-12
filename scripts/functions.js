@@ -100,7 +100,7 @@ function createWindowGit() {
       <b>24h pour coder:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Deux fois participant au concours <strong>24h pour coder</strong> organiser par le BDE du CERI. Mon équipe a fini à chaque fois sur le podium en utilisant la librairie Bbop-2D
+      Deux participations au concours <strong>24h pour coder</strong> organisé par le BDE du CERI. Mon équipe a fini à chaque fois sur le podium en utilisant la librairie Bbop-2D
     </p>
     <a href="https://github.com/Alexander7474/24h-game" style="color: #38bdf8; text-decoration: underline;">Première participation</a>
     <a href="https://github.com/Alexander7474/24h-coder-2" style="color: #38bdf8; text-decoration: underline;">Seconde participation</a>
@@ -108,7 +108,7 @@ function createWindowGit() {
       <b>System Info:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Un outils de survéillance de server linux développé en bash et en python.
+      Un outil de surveillance de serveur linux développé en bash et en python.
     </p>
     <a href="https://github.com/Alexander7474/System_Information" style="color: #38bdf8; text-decoration: underline;">System Information</a>
     <p class="medium-font">
@@ -136,7 +136,7 @@ function createWindowHTB() {
       <p class="medium-font">CTF</p>
     </div>
     <p style="margin-bottom: 1rem;">
-        Passionné par la <strong>cybersécurité</strong> et le <strong>pentesting</strong>, je fais régulièrement des <strong>CTF</strong> sur <em>Hack The Box</em> et <em>TryHackMe</em>.
+        Passionné par la <strong>cybersécurité</strong> et le <strong>pentesting</strong>, je fais régulièrement des <strong>CTF</strong> sur <em>Hack The Box</em>,<em>Try Hack Me</em> et <em>Root Me</em>.
       </p>
 
 
