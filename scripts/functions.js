@@ -93,20 +93,24 @@ function createWindowGit() {
       <b>Bbop-2D:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Une <strong>librairie 2D</strong> en <strong>C++</strong> avec <strong>OpenGL</strong>. <a href="https://github.com/Alexander7474/Bbop-2D" style="color: #38bdf8; text-decoration: underline;">Bbop-2D</a>.
+      Une <strong>librairie 2D</strong> en <strong>C++</strong> avec <strong>OpenGL</strong>.
     </p>
+    <a href="https://github.com/Alexander7474/Bbop-2D" style="color: #38bdf8; text-decoration: underline;">Bbop-2D</a>
     <p class="medium-font">
       <b>24h pour coder:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Deux fois participant au concours <strong>24h pour coder</strong> organiser par le BDE du CERI. J'ai terminé avec mon équipe à chaque fois sur le podium en utilisant la librairie Bbop-2D
+      Deux fois participant au concours <strong>24h pour coder</strong> organiser par le BDE du CERI. Mon équipe a fini à chaque fois sur le podium en utilisant la librairie Bbop-2D
     </p>
+    <a href="https://github.com/Alexander7474/24h-game" style="color: #38bdf8; text-decoration: underline;">Première participation</a>
+    <a href="https://github.com/Alexander7474/24h-coder-2" style="color: #38bdf8; text-decoration: underline;">Seconde participation</a>
     <p class="medium-font">
-      <b>System Inforation:</b>
+      <b>System Info:</b>
     </p>
     <p style="margin-bottom: 1rem;">
-      Un outils de survéillance de server linux développé en bash et en python. <a href="https://github.com/Alexander7474/System_Information" style="color: #38bdf8; text-decoration: underline;">System Information</a>.
+      Un outils de survéillance de server linux développé en bash et en python.
     </p>
+    <a href="https://github.com/Alexander7474/System_Information" style="color: #38bdf8; text-decoration: underline;">System Information</a>
     <p class="medium-font">
       <b>GitHub:</b>
     </p>
