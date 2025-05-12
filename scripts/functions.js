@@ -166,15 +166,88 @@ function createWindowHTB() {
       </a>
 
       <br>
-      <p> TryHackMe </p>
+      <p> Root Me </p>
+      <a class="htb-link" href="https://www.root-me.org/Alexander74">
+        <div class="show_js_badge" style="width: 440px; height:100px; background-color: #343c41; border-radius:8px; text-align: left;
+          background-image: url(https://root-me-badge.cloud.duboc.xyz/storage_server/skull-white.png); background-size: 40px 40px;
+          background-position: right 4px bottom 6px; background-repeat: no-repeat;">
+            <style scoped>
+                @font-face {
+                    font-family: "Roboto"; font-style: normal; font-weight: 400;
+                    src: url(https://root-me-badge.cloud.duboc.xyz/storage_server/htb-font.woff2) format("woff2");
+                }
+                .rootme_font {
+                    font-family: "Roboto", monospace;
+                }
+                .rootme_nickname {
+                    color: #ffffff; font-size: 24px; font-weight: bold;
+                }
+                .rootme_points {
+                    color: #4bb7ef; font-size: 20px; position: relative; right: 22px;
+                }
+                .rootme_top {
+                    color: #ffae01; font-size: 20px; position: relative; right: 40px;
+                }
+                .rootme_ranking {
+                    color: #ffffff; font-size: 20px;
+                }
+                .rootme_line {
+                    line-height: 24px; margin: 0px; padding: 0px;
+                }
+                .rootme_link {
+                    color: #9acc14; font-size: 1.2em; text-decoration: none;
+                }
+                .rootme_link:hover {
+                    color: #9acc14; font-size: 1.2em; text-decoration: underline;
+                }
+                .rootme_link:visited {
+                    color: #9acc14;
+                }
+                .rootme_rank {
+                    color: #ffffff; font-size: 22px;
+                }
+                .rootme_icon_target {
+                    position: relative; top: 4px; right: 8px; width: 20px; height:20px;
+                }
+                .rootme_icon_star {
+                    position: relative; top: 3.6px; right: 28px; width: 20px; height:20px;
+                }
+            </style>
 
-      <div style="overflow: hidden; width: 390px; height: 500px;">
-        <iframe 
-          src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=592596" 
-          style="border:none; transform: scale(1.2); transform-origin: top left; width: 100%; height: 100%;">
-        </iframe>
-      </div>
-    </div>
+            <div style="width: 80px; height: 80px; border-radius:8px; float:left; margin-top:10px; margin-left:10px;">
+                <img style="width:80px; height: 80px; border-radius:8px;" src="img/2025-02-19_18-35.png">
+            </div>
+
+            <div class="rootme_font" style="float:left; height:80px; padding-left: 10px; margin-top:10px;">
+                <p class="rootme_line">
+                    <span class="rootme_nickname">Alexander74</span>
+                    <span class="rootme_rank">trainee</span><br>
+                </p>
+                <p class="rootme_line">
+                    <span class="rootme_ranking">Score:830</span>
+                    <img src="https://root-me-badge.cloud.duboc.xyz/storage_server/target.png" class="rootme_icon_target">
+                    <span class="rootme_points">66/599</span>
+                    <img src="https://root-me-badge.cloud.duboc.xyz/storage_server/star.png" class="rootme_icon_star">
+                    <span class="rootme_top">4.23%</span><br>
+                </p>
+                <p class="rootme_line">
+                    <a href="https://www.root-me.org" class="rootme_link">root-me.org</a>
+                </p>
+            </div>
+          </div>
+        </a>
+
+        <br>
+        <p> Try Hack Me </p>
+
+        <div style="overflow: hidden; width: 390px; height: 500px;">
+          <iframe 
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=592596" 
+            style="border:none; transform: scale(1.2); transform-origin: top left; width: 100%; height: 100%;">
+          </iframe>
+        </div>
+
+     </div>
   `;
 
   document.getElementById("windows-conteneur").appendChild(win);
