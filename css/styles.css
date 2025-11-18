@@ -1,0 +1,207 @@
+/* ---------------- GLOBAL THEME ---------------- */
+  :root {
+    --bg: #0a0a0a;
+    --panel: #111;
+    --panel-light: #181818;
+    --text: #e6e6e6;
+    --red: #ff003c;
+    --red-glow: 0 0 20px rgba(255, 0, 60, 0.5);
+    --radius: 18px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+  }
+
+  a { color: var(--red); text-decoration: none; }
+
+  /* ---------------- ULTRA MODERN GRID BACKGROUND ---------------- */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 20%, rgba(255,0,50,0.12), transparent 60%),
+                repeating-linear-gradient(90deg, rgba(255,0,40,0.05) 0 1px, transparent 1px 80px),
+                repeating-linear-gradient(0deg, rgba(255,0,40,0.05) 0 1px, transparent 1px 80px);
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  /* ---------------- HEADER FLOATING ---------------- */
+  header {
+    width: 100%;
+    padding: 28px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.45);
+    border-bottom: 1px solid rgba(255, 0, 60, 0.15);
+  }
+
+  header nav a {
+    margin-left: 32px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  }
+
+  header nav a:hover {
+    color: white;
+    text-shadow: var(--red-glow);
+  }
+
+  /* ---------------- HERO SECTION ---------------- */
+  .hero {
+    min-height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 700px;
+  }
+
+  .hero h1 span {
+    color: var(--red);
+    text-shadow: var(--red-glow);
+  }
+
+  .hero p {
+    max-width: 620px;
+    opacity: .85;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 14px 36px;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    background: var(--red);
+    box-shadow: var(--red-glow);
+    color: #fff;
+    font-weight: 700;
+    margin-top: 10px;
+    transition: 0.25s;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px rgba(255,0,60,0.75);
+  }
+
+  /* ---------------- SECTION WRAPPER ---------------- */
+  section {
+    padding: 120px 10%;
+  }
+
+  h2.section-title {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    text-shadow: var(--red-glow);
+  }
+
+
+  h3.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    text-shadow: var(--red-glow);
+  }
+
+  /* ---------------- SKILLS — CIRCULAR CARDS ---------------- */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 210px;
+    height: 100px;
+    border-radius: 10%;
+    background: var(--panel);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 20px;
+    border: 1px solid rgba(255,0,60,0.18);
+    box-shadow: inset 0 0 25px rgba(255,0,60,0.09), var(--red-glow);
+    transition: 0.3s;
+  }
+
+  .skill-item:hover {
+    transform: scale(1.08);
+  }
+
+  /* ---------------- PROJECTS — 3D TILT CARDS ---------------- */
+  .project-card {
+    background: var(--panel-light);
+    padding: 35px;
+    margin-top: 30px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,0,60,0.22);
+    transition: 0.3s;
+    transform-style: preserve-3d;
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px) rotateX(6deg) rotateY(-6deg);
+    box-shadow: var(--red-glow);
+  }
+
+  .project-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+    color: var(--red);
+  }
+
+  .badge-list {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #222;
+    border: 1px solid rgba(255,0,60,0.25);
+    font-size: 0.85rem;
+    letter-spacing: .5px;
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  footer {
+    text-align: center;
+    padding: 40px;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255,0,60,0.25);
+  }
+

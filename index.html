@@ -1,34 +1,145 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riced-portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — AL</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
-  <div class="main-div" id="main-bg">
-    <div class="top-bar">
-      <div class="icon-anim " id="time"></div>
-      <div class="icon-anim top-icon"><img src="./img/wifi-icon.jpg" alt="Wifi"></div>
-      <div class="icon-anim top-icon"><img src="./img/bluetooth-icon.jpg" alt="Bluetooth"></div>
-      <div class="icon-anim top-icon"><img src="./img/parameter-icon.jpg" alt="param" id="change-bg"></div>
-    </div>
+  <header>
+    <div class="logo" style="font-size:22px;font-weight:800;color:var(--red);text-shadow:var(--red-glow);">AL</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Compétences</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <div class="windows" id="windows-conteneur">
-    <!-- Cles fenêtre ouverte depuis la bar de nav s'ajoute ici -->
-    </div>
-    <div class="nav-bar">
-      <div class="icon-anim nav-icon"><img src="./img/person-icon.png" alt="Me"></div>
-      <div class="icon-anim nav-icon"><img src="./img/github-icon.png" alt="Git"></div>
-      <div class="icon-anim nav-icon"><img src="./img/htb-icon.jpeg" alt="HTB"></div>
-    </div>
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Salut, je suis <span>Alexandre LANTERNIER</span> — étudiant en informatique & passionné de cybersécurité.</h1>
+    <a href="#projects" class="cta-btn">Voir mes projets</a>
   </div>
-  
-  <!-- Ajout des scripts -->
-  <script src="scripts/functions.js"></script>
-  <script src="scripts/main.js"></script>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">À Propos</h2>
+    <p style="max-width:700px;font-size:1.15rem;line-height:1.7;">
+      Étudiant au Centre d’Enseignement et de Recherche en Informatique d’Avignon, je suis passionné par la programmation bas niveau et la cybersécurité. Ma pratique du développement « from scratch » m’offre une compréhension fine des mécanismes internes, essentielle pour identifier et exploiter les failles de sécurité. 
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">Compétences</h2>
+    <h3 class="section-title">Langages informatiques</h3>
+    <div class="skills-grid">
+      <div class="skill-item">C/C++</div>
+      <div class="skill-item">Java</div>
+      <div class="skill-item">ASM(notions)</div>
+      <div class="skill-item">HTML/CSS</div>
+      <div class="skill-item">Javascript</div>
+      <div class="skill-item">Php</div>
+      <div class="skill-item">Bash</div>
+    </div>
+    <h3 class="section-title">Librairie / Framework</h3>
+    <div class="skills-grid">
+      <div class="skill-item">OpenGL</div>
+      <div class="skill-item">GLFW</div>
+      <div class="skill-item">Box2D</div>
+      <div class="skill-item">Yii</div>
+    </div>
+    <h3 class="section-title">Outils pentest</h3>
+    <div class="skills-grid">
+      <div class="skill-item">Metasploit</div>
+      <div class="skill-item">Nmap</div>
+      <div class="skill-item">Hashcat</div>
+      <div class="skill-item">Wireshark</div>
+      <div class="skill-item">BurpSuite</div>
+      <div class="skill-item">Gobuster</div>
+      <div class="skill-item">ffuf</div>
+      <div class="skill-item">Searchsploit</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">Projets</h2>
+      <div class="project-card">
+        <h3>Mon github</h3>
+        <p>Vous trouverez ici l'ensemble de mes projets open-source</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474"><span class="badge">GitHub / Alexander7474</span></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Bbop-2D</h3>
+        <p>Développement d'une librairie graphique 2D fait avec OpenGL dédié à la création de jeux-vidéo.</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474/Bbop-2D"><span class="badge">GitHub / Bbop-2D</span></a>
+        </div>
+        <br>
+        <p>Cette librairie à permit la création d'un prototypes de shooter 2D.</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474/Better-Shoot-Right"><span class="badge">GitHub / Better-Shoot-Right</span></a>
+        </div>
+        <br>
+        <p>Et elle a était utilisé au 24h pour coder du CERI.</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474/24g-game"><span class="badge">GitHub / RSA-Derby</span></a>
+          <a href="https://github.com/Alexander7474/24g-coder-2"><span class="badge">GitHub / Better-Fish-Right</span></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>System-Information</h3>
+        <p>Création d'un outils dédié à la surveillance d'un park de serveurs.</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474/System_Information"><span class="badge">GitHub / System-Information</span></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>CERIcompiler</h3>
+        <p>Développement de fonctionnalités supplémentaires sur la base du CERIcompiler de Pierre Jourlin.</p>
+        <div class="badge-list">
+          <a href="https://github.com/Alexander7474/Compilateur"><span class="badge">GitHub / CERIcompiler</span></a>
+          <a href="https://framagit.org/jourlin/cericompiler"><span class="badge">FramaGit / CERIcompiler (base)</span></a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Capture The Flag</h3>
+        <p>Je participe régulièrement à des captures the flag et d'autre challenge technique orienté sécurité offensive.</p>
+        <div class="badge-list">
+          <a href="https://app.hackthebox.com/profile/384315"><span class="badge">HackTheBox / Alexander74</span></a>
+          <a href="https://tryhackme.com/p/Alexander74"><span class="badge">TryHackMe / Alexander74</span></a>
+          <a href="https://www.root-me.org/Alexander74?lang=fr"><span class="badge">RootMe / Alexander74</span></a>
+        </div>
+      </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-box">
+      <a href="https://www.linkedin.com/in/alexandre-lanternier-b9b645332/" target="_blank">
+        <span class="badge"><i class="fa-brands fa-linkedin" style="color:var(--red);"></i>LinkedIn</span>
+      </a>
+
+      <a href="mailto:alexandre.lanternier@outlook.fr">
+        <span class="badge"><i class="fa-solid fa-envelope" style="color:var(--red);"></i>Email</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 — Portfolio Alexandre LANTERNIER
+  </footer>
 </body>
 </html>
 
